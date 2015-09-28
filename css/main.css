@@ -4,3 +4,24 @@
     float: none;
     margin: 0 auto;
 }
+
+.test-row div {
+    height: 40px;
+    background-color: aqua;
+    border-right: solid 1px white;
+    border-top: solid 1px white;
+}
+
+table, form {
+    text-align: left;
+}
+.my-form {
+    max-width: 300px;
+    margin: 15px auto;
+    box-shadow: 0 0 5px blue;
+    padding: 15px;
+    border-radius: 4px;
+}
+.form-div {
+    float: none;
+}
