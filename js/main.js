@@ -21,9 +21,17 @@ function initMap() {
         lng: position.coords.longitude
       };
 
-      infoWindow.setPosition(pos);
-      infoWindow.setContent('Location found.');
+      // infoWindow.setPosition(pos);
+      // infoWindow.setContent('Itt vagyok, sziasztok.');
       map.setCenter(pos);
+        
+        // Saját jelölő.
+        var marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            title: 'Jelenlegi pozícióm!'
+          });
+        
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
     });

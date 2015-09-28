@@ -34,10 +34,20 @@
 
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="active">
+                        <a data-name="home" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a data-name="about" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a data-name="contact" href="#contact">Contact</a>
+                    </li>
                 </ul>
+                <select onchange="setNewLang(this)" class="pull-right lang-selector">
+                    <option value="en">English</option>
+                    <option value="hu">Magyar</option>
+                </select>
             </div><!--.nav-collapse -->
         </div>
     </nav>
@@ -53,6 +63,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     
     <script src="js/main.js"></script>
+    <script src="js/trans.js"></script>
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkkPWXLd1Nx4bnzvTb0NTtJeJSAj7Y83E&signed_in=true&callback=initMap"
             async defer></script>
