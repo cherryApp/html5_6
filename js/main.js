@@ -53,6 +53,15 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         'Error: Your browser doesn\'t support geolocation.');
 }
 
+// Késleltetett megjelenítés.
+function showModal() {
+    $("#myModal").modal("show");
+}
+setTimeout(showModal, 5000);
+
+// Popover beállítása.
+$('#popover1').popover();
+
 // A folyamat állása.
 function changeProgress(progress) {
 
